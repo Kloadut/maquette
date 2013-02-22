@@ -1,8 +1,34 @@
 ---
-title: Welcome to Middleman
+title: Yunohost | Self hosting for all
 ---
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to I18n.t(:read_online_doc), "http://middlemanapp.com/"
+%div.navbar.navbar-fixed-top.navbar-inverse
+  %div.navbar-inner
+    %div.container
+      = link_to 'Yunohost.org', '#first', class: 'brand'
+      %ul.nav.pull-right
+        %li
+          = link_to I18n.t(:discover), '#discover'
+        %li
+          = link_to I18n.t(:try_and_get), '#try-and-get'
+        %li
+          = link_to I18n.t(:contribute), '#contribute'
+        %li
+          = link_to I18n.t(:follow), '#follow'
+
+%div.container
+  %section#first
+    %p Bring your digital activity @home.
+    %p YUNOHOST is a dead-simple solution aiming to deploy your own server with ease.
+
+  %section#discover
+    .welcome
+      %h1 Middleman is Watching
+      %p.doc
+        = link_to I18n.t(:read_online_doc), "http://middlemanapp.com/"
+
+  %section#try-and-get
+
+  %section#contribute
+
+  %section#follow

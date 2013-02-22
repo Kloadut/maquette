@@ -7,7 +7,10 @@
     / Use title if it's in the page YAML frontmatter
     %title= data.page.title || "The Middleman"
 
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}/
+
     = stylesheet_link_tag "bootstrap.min"
+    = stylesheet_link_tag "bootstrap-responsive.min"
     = stylesheet_link_tag "normalize", "all"
 
     = javascript_include_tag  "jquery-1.9.1.min", "jquery.stellar.min", "bootstrap.min"
