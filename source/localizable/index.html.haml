@@ -2,9 +2,9 @@
 title: Yunohost | Self hosting for all
 ---
 
-%div.navbar.navbar-fixed-top.navbar-inverse
-  %div.navbar-inner
-    %div.container
+.navbar.navbar-fixed-top.navbar-inverse
+  .navbar-inner
+    .container
       = link_to 'Yunohost.org', '#first', class: 'brand'
       %ul.nav.pull-right
         %li
@@ -16,15 +16,31 @@ title: Yunohost | Self hosting for all
         %li
           = link_to I18n.t(:follow), '#follow'
 
-%div.container
+#main.container
   %section#first
-    %p Bring your digital activity @home.
-    %p YUNOHOST is a dead-simple solution aiming to deploy your own server with ease.
+    .row
+      .span8
+        %p Bring your digital activity @home.
+        %p YUNOHOST is a dead-simple solution aiming to deploy your own server with ease.
+      .span4
+        (logo)
 
   %section#discover
+    .row
+      .span12
+        %p DISCOVER
 
   %section#try-and-get
+    .row
+      .span12
+        %p TRY AND GET
 
   %section#contribute
+    .row
+      .span12
+        %p CONTRIBUTE
 
   %section#follow
+    .row
+      .span12
+        %p FOLLOW
