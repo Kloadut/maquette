@@ -2,45 +2,177 @@
 title: Yunohost | Self hosting for all
 ---
 
-.navbar.navbar-fixed-top.navbar-inverse
-  .navbar-inner
-    .container
-      = link_to 'Yunohost.org', '#first', class: 'brand'
-      %ul.nav.pull-right
-        %li
-          = link_to I18n.t(:discover), '#discover'
-        %li
-          = link_to I18n.t(:try_and_get), '#try-and-get'
-        %li
-          = link_to I18n.t(:contribute), '#contribute'
-        %li
-          = link_to I18n.t(:follow), '#follow'
-
-#main.container
-  %section#first
-    .row
-      .span8
-        %p Bring your digital activity @home.
-        %p YUNOHOST is a dead-simple solution aiming to deploy your own server with ease.
-      .span4
-        (logo)
-
-  %section#discover
-    .row
-      .span12
-        %p DISCOVER
-
-  %section#try-and-get
-    .row
-      .span12
-        %p TRY AND GET
-
-  %section#contribute
-    .row
-      .span12
-        %p CONTRIBUTE
-
-  %section#follow
-    .row
-      .span12
-        %p FOLLOW
+#container.row.small-fix
+  .row.whitebox.stroked
+    .large-5.columns
+      %p.epic
+        %span.big
+          %span.hide-for-small
+            %br/
+            %br/
+            %br/
+          %span.uppercase YUNOHOST
+          is a dead-simple solution aiming to deploy your own server with ease.
+        %br/
+        %br/
+        %a.big.blue.button{:href => "#"} TRY IT >
+    .large-7.columns.padding-kill
+      %img.right{:src => "http://dummyimage.com/532x470"}/
+    .clear
+  .row.triplette
+    .large-4.columns
+      .whitebox.padded.stroked
+        %h4 Built-in apps
+        %div Install tons of applications with a single click.
+        %p
+    .large-4.columns
+      .whitebox.padded.stroked
+        %h4 Easy install
+        %div 4 easy steps and you are ready to go!
+        %p
+    .large-4.columns
+      .whitebox.padded.stroked
+        %h4 Friendly manager
+        %div Enjoy your server administration :)
+        %p
+  .spacer
+  .row.small-fix
+    .large-6.columns.whitebox.padded.stroked
+      %input{:type => "text", :value => "yayaya"}/
+      %textarea Type your message here...
+      %input.button{:rows => "40", :type => "submit", :value => "Send"}/
+  .spacer
+  .row.small-fix
+    .large-12.columns
+      %p.justify Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada tempus tincidunt. Quisque in lectus elit, ac suscipit elit. In consectetur sodales odio, vitae mollis sem varius et. Phasellus dui tellus, imperdiet quis feugiat eu, scelerisque nec nulla. Ut ultrices turpis bibendum massa volutpat euismod. Curabitur facilisis felis sed enim eleifend mollis tristique turpis aliquet. Sed eget leo pellentesque magna sollicitudin eleifend eu a mauris. Sed ac tellus et libero faucibus tristique quis ut sapien. Praesent suscipit facilisis lacus pharetra varius. Morbi nec mi massa. Praesent eu nibh tortor, id pharetra massa. Nunc porta rhoncus lacinia.
+    .large-6.columns
+      %img.center.stroked{:src => "http://dummyimage.com/300x300"}/
+      %p.justify.top-spaced Ut ultrices turpis bibendum massa volutpat euismod. Curabitur facilisis felis sed enim eleifend     mollis tristique turpis aliquet. Sed eget leo pellentesque magna sollicitudin eleifend eu a mauris.
+    .large-6.columns
+      %pre.blackbox.padded.stroked
+        :preserve
+          if 'pattern' in arg_params:
+              if (category == sys.argv[1]) and (action == sys.argv[2]):
+                  if 'dest' in arg_params: name = arg_params['dest']
+                  elif arg_fullname: name = arg_fullname[2:]
+                  else: name = arg_name
+                  patterns[name] = arg_params['pattern']
+              del arg_params['pattern']      %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
