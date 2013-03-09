@@ -49,7 +49,7 @@ body {
 
 .button,
 input.button,
-nav.top-bar section.top-bar-section ul.right li a.button {
+nav.top-bar div.top-bar-section ul.right li a.button {
     @include colorbox($grey);
     font-family: 'Source Code Pro';
     text-transform: uppercase;
@@ -160,6 +160,10 @@ div.fixed {
 }
 
 nav.top-bar {
+    .top-bar-wrapper {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
     font-family: 'Source Code Pro';
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -181,7 +185,7 @@ nav.top-bar {
             color: $black;
         }
     }
-    section.top-bar-section {
+    div.top-bar-section {
         ul.right {
             li {
                 background: $whaite;

@@ -15,24 +15,25 @@
   %body{:class => page_classes}
     #top-bar-container.fixed
       %nav.top-bar
-        %ul.title-area
-          / Title Area
-          %li.name
-            %h1= link_to 'YUNOHOST', '/'
-          / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-          %li.toggle-topbar.menu-icon
-            %a{href: '#'}
-              %span Menu
+        .top-bar-wrapper
+          %ul.title-area
+            / Title Area
+            %li.name
+              %h1= link_to 'YUNOHOST', '/'
+            / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+            %li.toggle-topbar.menu-icon
+              %a{href: '#'}
+                %span Menu
 
-        %section.top-bar-section
-          / Right Nav Section
-          %ul.right
-            %li.active= link_to 'Discover', '#'
-            %li= link_to 'Documentation', '#'
-            %li= link_to 'Get help', '#'
-            %li= link_to 'Contribute', '#'
-            %li.has-form
-              %a.red.button{href: '#'} Download
+          .top-bar-section
+            / Right Nav Section
+            %ul.right
+              %li.active= link_to 'Discover', '#'
+              %li= link_to 'Documentation', '#'
+              %li= link_to 'Get help', '#'
+              %li= link_to 'Contribute', '#'
+              %li.has-form
+                %a.red.button{href: '#'} Download
 
     = yield
 
