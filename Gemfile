@@ -5,4 +5,3 @@ gem "therubyracer"
 
 gem "rb-inotify"
 
-gem "zurb-foundation", "4.0.4"

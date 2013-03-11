@@ -1,4 +1,5 @@
 @import "fonts";
+@import "normalize";
 
 /* Foundation vars */
 
@@ -189,6 +190,9 @@ nav.top-bar {
         ul.right {
             li {
                 background: $whaite;
+            }
+            li > a {
+                color: $black;
             }
             li a:not(.button) {
                 font-weight: 700;
