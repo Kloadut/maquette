@@ -9,7 +9,7 @@
 
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}/
 
-    = stylesheet_link_tag "normalize", "app"
+    = stylesheet_link_tag "app"
 
     = javascript_include_tag  "vendor/custom.modernizr"
   %body{:class => page_classes}
@@ -33,7 +33,8 @@
               %li= link_to 'Get help', '#'
               %li= link_to 'Contribute', '#'
               %li.has-form
-                %a.red.button{href: '#'} Download
+                %div.btn-container
+                  %a.red.button{href: '#'} Download
 
     = yield
 

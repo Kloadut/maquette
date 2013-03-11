@@ -3,30 +3,23 @@
 
 /* Foundation vars */
 
-$blue: #2BA6CB;
-$whaite: #F2F2F2;
-$grey: #AAA;
-$black: #222;
-$yellow: #FFFF66;
-$red: #CC0000;
-$red: #FB2F3E;
-$green: #66FF00;
-
-$body-font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font-family: 'Source Code Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$button-radius: 4px;
-$topbar-bg: $whaite;
-
-$topbar-height: 85px;
-$topbar-title-weight: bold;
-$topbar-title-font-size: 2em;
-
-$topbar-link-color: $black;
-$topbar-link-weight: normal;
-$topbar-link-font-size: 18px;
-$topbar-breakpoint: 1024px;
+//
+//$body-font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//$header-font-family: 'Source Code Pro', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//$button-radius: 4px;
+//$topbar-bg: $whaite;
+//
+//$topbar-height: 85px;
+//$topbar-title-weight: bold;
+//$topbar-title-font-size: 2em;
+//
+//$topbar-link-color: $black;
+//$topbar-link-weight: normal;
+//$topbar-link-font-size: 18px;
+//$topbar-breakpoint: 1024px;
 
 @import "settings";
+// @import page specific var overwrite here
 @import "foundation";
 
 
@@ -97,8 +90,8 @@ nav.top-bar div.top-bar-section ul.right li a.button {
         background-color: inherit;
         color: $black;
         box-shadow: none;
-        margin-top: 2px;
-        margin-left: 2px;
+        //margin-top: 2px;
+        //margin-left: 2px;
     }
     &:hover {
         background-color: inherit;
@@ -208,7 +201,7 @@ nav.top-bar {
             }
             li a.button:active {
                 box-shadow: none;
-                margin-top: 17px;
+                margin-top: 19px;
                 margin-right: 10px;
                 margin-left: 0;
             }
@@ -291,6 +284,13 @@ div.spacer {
 
 div {
     line-height: 23px;
+}
+
+.btn-container {
+    padding: 3px 2px 0 0;
+}
+.btn-container:active {
+    padding: 0 0 3px 2px;
 }
 
 /* Responsive stuffs */
