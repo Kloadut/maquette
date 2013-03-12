@@ -276,6 +276,10 @@ div {
     padding: 0 0 3px 2px;
 }
 
+#top-bar-container {
+    z-index: 97;
+}
+
 /* Responsive stuffs */
 
 @media screen and (max-width: 790px) {
